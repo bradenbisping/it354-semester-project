@@ -22,7 +22,9 @@ const appRoutes: Routes = [
     data: { title: 'Home' }
   },
   { path: 'news',
-    component: NewsComponent },
+    component: NewsComponent,
+    data: { title: 'News'}
+  },
   { path: 'music',
     component: MusicComponent,
     data: { title: 'Music' }
