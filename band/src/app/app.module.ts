@@ -59,14 +59,15 @@ const appRoutes: Routes = [
     MerchDetailComponent,
     PageNotFoundComponent
   ],
-  imports: [
+  imports:
+  [
     BrowserModule,
-    BrowserAnimationsModule, // new modules added here
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true }
     )
   ],
   providers: [],

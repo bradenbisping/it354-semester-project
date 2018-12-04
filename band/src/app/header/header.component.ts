@@ -7,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit
 {
-  nav: string;
+  count: 0;
 
   constructor()
   {
-    this.nav = 'home';
+
+  }
+
+  increment()
+  {
+    this.count++;
+  }
+
+  decrement()
+  {
+    this.count--;
   }
 
   ngOnInit()
