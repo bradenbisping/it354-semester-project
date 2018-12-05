@@ -18,7 +18,7 @@ p
 
 #outer
 {
-	background-color: #eee !important;
+	background-color: #00ff00 !important;
 }
 
 .container
@@ -28,23 +28,36 @@ p
 	margin: 0 auto;
 }
 
-header, section
+#fixedSame
 {
 	position: fixed;
 	text-align: center;
-	width: 560px;
+	width: 530px;
+	top: 55px;
+}
+
+header
+{
+	background-color: #ffffff;
+	position: relative;
+	// text-align: center;
+	width: 530px;
+	height: 40px;
+	top: 0px;
 }
 
 section
 {
-	top: 75px;
+	position: relative;
+	height: 300px;
+	width: 530px;
+	top: 0px;
 }
 
 #logo
 {
-	width:120px;
-	padding: 10px;
-	border-radius: 4px;
+	width: 80px;
+	height: 40px;
 }
 
 main
