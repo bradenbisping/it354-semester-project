@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import * as $ from 'jquery';
 
 @Component({
   selector: 'bbvb-music',
   templateUrl: './music.component.html',
-  styleUrls: ['./music.component.css']
+  styleUrls: ['./music.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MusicComponent implements OnInit {
 
@@ -38,7 +39,6 @@ export class MusicComponent implements OnInit {
 
       function mainVideo(id)
       {
-        // .html needs to be changed to something that is actually in music.component.html and is equivalent to the original structure
         $('#video').html(`
           <iframe style="width: 560px; height: 315px;" src="https://www.youtube.com/embed/${id}" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,12 +54,11 @@ export class MusicComponent implements OnInit {
           const description = item.snippet.description.substring(0, 100);
           const vid = item.snippet.resourceId.videoId;
           $('main').append(`
-            <article class = "item" data-key = "${vid}" style="display: flex; align-items: center; padding: 8px 12px;
-                                                              border: 2px solid white; border-radius: 8px; margin: 0 auto;">
-                <img src="${thumbnail}" alt ="" class="thumbnail" style="height: 70px;">
-                <div class = "details" style="padding: 8px 22px;">
-                <h4 style="padding: 0; margin: 0; line-height: 1.3; font-weight: 600;">${title}</h4>
-                <p style="padding: 0; margin: 0; line-height: 1.3; font-weight: 600; color: grey; font-size: 0.7rem;">${description}</p>
+            <article class = "item" data-key = "${vid}">
+                <img src="${thumbnail}" alt ="" id="thumbnail">
+                <div id = "details">
+                <h4>${title}</h4>
+                <p>${description}</p>
                 </div>
             </article>
           `);

@@ -1,13 +1,19 @@
-@import '../../styles-variables';
+// @import '../../styles-variables';
 
-bbvb-header {
-  nav {
-    width: 100%;
-  }
+// bbvb-header {
+//   nav {
+//     width: 100%;
+//   }
   
-  @media (min-width: map-get($grid-breakpoints, sm)) {
-    nav {
-      width: 80%;
-    }
-  }
-}
+//   @media (min-width: map-get($grid-breakpoints, sm)) {
+//     nav {
+//       width: 80%;
+//     }
+//   }
+// }
+
+// #navbar
+// {
+//   position: relative;
+//   bottom: 0px;
+// }
