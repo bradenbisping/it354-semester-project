@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryService } from '../inventory.service';
 
 @Component({
   selector: 'bbvb-header',
@@ -7,12 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit
 {
-  count: 0;
+  count: number;
+  empty: string;
 
-  constructor()
+  constructor(private data: InventoryService)
   {
-
+    // data.isCartEmpty();
+    // if (data.empty)
+    // {
+    //   this.empty = 'disabled';
+    // }
+    // else
+    // {
+    //   this.empty = 'active';
+    // }
   }
+
+  ngOnInit()
+  { }
 
   increment()
   {
@@ -24,7 +37,5 @@ export class HeaderComponent implements OnInit
     this.count--;
   }
 
-  ngOnInit()
-  { }
 
 }

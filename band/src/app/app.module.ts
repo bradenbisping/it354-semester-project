@@ -14,6 +14,9 @@ import { MusicComponent } from './music/music.component';
 import { NewsComponent } from './news/news.component';
 import { MerchDetailComponent } from './merch/merch-detail/merch-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CartComponent } from './header/cart/cart.component';
+
+import { InventoryService } from './inventory.service';
 
 const appRoutes: Routes = [
   {
@@ -57,7 +60,8 @@ const appRoutes: Routes = [
     MusicComponent,
     NewsComponent,
     MerchDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CartComponent
   ],
   imports:
   [
@@ -70,7 +74,7 @@ const appRoutes: Routes = [
       { enableTracing: true }
     )
   ],
-  providers: [],
+  providers: [InventoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

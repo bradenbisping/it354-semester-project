@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryService } from '../inventory.service';
 
 @Component({
   selector: 'bbvb-footer',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  empty: boolean;
+
+  constructor(private inventory: InventoryService) { }
 
   ngOnInit() {
   }

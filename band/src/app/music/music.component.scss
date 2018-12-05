@@ -18,7 +18,9 @@ p
 
 #outer
 {
-	background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HKO9ymTsej0hwltd9/videoblocks-green-abstract-animated-artistic-background-with-moving-chaotic-gradient-structures-on-a-dark-background-computer-rendering_rngrmt75im_thumbnail-full01.png');
+	background-image: 
+	// url('../../assets/images/potentialBG.png');
+	url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HKO9ymTsej0hwltd9/videoblocks-green-abstract-animated-artistic-background-with-moving-chaotic-gradient-structures-on-a-dark-background-computer-rendering_rngrmt75im_thumbnail-full01.png');
 }
 
 .container
@@ -28,23 +30,36 @@ p
 	margin: 0 auto;
 }
 
-header, section
+#fixedSame
 {
 	position: fixed;
 	text-align: center;
-	width: 560px;
+	width: 530px;
+	top: 55px;
+}
+
+header
+{
+	background-color: #ffffff;
+	position: relative;
+	// text-align: center;
+	width: 530px;
+	height: 40px;
+	top: 0px;
 }
 
 section
 {
-	top: 75px;
+	position: relative;
+	height: 300px;
+	width: 530px;
+	top: 0px;
 }
 
 #logo
 {
-	width:120px;
-	padding: 10px;
-	border-radius: 4px;
+	width: 80px;
+	height: 40px;
 }
 
 main
