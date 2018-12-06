@@ -8,14 +8,15 @@
   #cover{
     top: 45px;
     position:relative;
-    background: #222 url('../../assets/images/BBVBStage.png') center center no-repeat;
+    background: black url('../../assets/images/BBVBStage.png') center center no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
     height:100%;
   }
 #cover-caption {
     min-height: 100vh;
+    width: 100%;
 }
 #welcome{
     position:relative;
@@ -33,6 +34,7 @@ img{
 .col-sm-6{
     position:relative;
     top: 75px;
+    background-color:black;
 }
 h1{
     text-align: center;
@@ -43,10 +45,10 @@ p{
     color: white;
 }
 .row{
-    background-color:#222;
+    background-color:black;
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
-    // width:100%;
+    //width:100%;
     // height: 100%;
 }
