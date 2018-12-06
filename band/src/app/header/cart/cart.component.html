@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div *ngFor="let item of fullCart" class="row justify-content-center">
+        <div class="col-sm-4 card border border-dark mb-3">
+        <a [routerLink]="['/merch', item.id]"><img class="card-img-top" src="../../assets/images/{{item.id}}.png" alt="{{item.name}}"></a>
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">
+                    <i>
+                        ${{item.price}} * {{item.quantity}} + tax = ${{(((item.price*item.quantity) * .0875) + (item.price*item.quantity)).toFixed(2)}}
+                    </i>
+                </p>
+                <p class="card-text">{{item.description}}</p>
+                <button type="button" class="btn btn-danger" (click)="removeItem(item.id)">Remove from Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div style="text-align: center" class="col-sm-8 card border border-dark mb-3">
+            <div class="card-body">
+                <h3 class="card-title">${{sum.toFixed(2)}}</h3>
+                <bbvb-paypal></bbvb-paypal>
+            </div>
+        </div>
+    </div>
+</div>

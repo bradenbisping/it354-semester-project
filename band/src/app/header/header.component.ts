@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { InventoryService } from '../inventory.service';
 
 @Component({
@@ -6,38 +6,15 @@ import { InventoryService } from '../inventory.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit
+export class HeaderComponent implements OnInit, DoCheck
 {
   count: number;
-  empty: boolean;
 
-  constructor(private data: InventoryService)
-  {
+  constructor(private data: InventoryService) { }
 
+  ngOnInit() { }
+
+  ngDoCheck() {
+    this.count = this.data.findCount();
   }
-
-  ngOnInit()
-  {
-    this.data.isCartEmpty();
-    if (this.data.empty)
-    {
-      this.empty = true;
-    }
-    else
-    {
-      this.empty = false;
-    }
-  }
-
-  increment()
-  {
-    this.count++;
-  }
-
-  decrement()
-  {
-    this.count--;
-  }
-
-
 }

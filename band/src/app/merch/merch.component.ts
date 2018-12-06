@@ -18,4 +18,9 @@ export class MerchComponent implements OnInit {
     this.merch = this.data.inventory;
   }
 
+  addItem(id: number)
+  {
+    this.data.addItem(id);
+  }
+
 }
