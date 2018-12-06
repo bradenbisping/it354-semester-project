@@ -1,9 +1,12 @@
 h5{
     font-weight: bold;
-    color: white;
+    color: lightgreen;
+}
+.card-subtitle{
+    color:green;
 }
 p{
-    color:white;
+    color:lightgreen;
     font-size: 14pt;
 }
 .container-fluid{
@@ -23,4 +26,11 @@ img {
 .row{
     width:100%;
     padding-left: 40px;
+}
+.card{
+    text-align: center;
+    background-color:black;
+}
+a{
+    color:rgb(255, 255, 255);
 }
