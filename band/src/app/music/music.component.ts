@@ -92,8 +92,8 @@ export class MusicComponent implements OnInit {
           <article class = "item" data-key = "${vid}">
               <img src="${thumbnail}" alt ="" id="thumbnail">
               <div id = "details">
-              <h4>${title}</h4>
-              <p>${description}</p>
+                <h6>${title}</h6>
+                <br>
               </div>
           </article>
         `);
