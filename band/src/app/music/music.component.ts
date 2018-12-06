@@ -89,7 +89,7 @@ export class MusicComponent implements OnInit {
         const description = item.snippet.description.substring(0, 100);
         const vid = item.snippet.resourceId.videoId;
         $('main').append(`
-          <article class = "item" data-key = "${vid}">
+          <article style="text-align: center" class="item" data-key="${vid}">
               <img src="${thumbnail}" alt ="" id="thumbnail">
               <div id = "details">
                 <h6>${title}</h6>

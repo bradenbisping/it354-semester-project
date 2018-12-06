@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CartComponent } from './header/cart/cart.component';
 
 import { InventoryService } from './inventory.service';
+import { PaypalComponent } from './header/cart/paypal/paypal.component';
 
 const appRoutes: Routes = [
   {
@@ -43,6 +44,10 @@ const appRoutes: Routes = [
       id: '{{ id }}'
     }
   },
+  { path: 'cart',
+    component: CartComponent,
+    data: { title: 'Cart' }
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -64,7 +69,8 @@ const appRoutes: Routes = [
     NewsComponent,
     MerchDetailComponent,
     PageNotFoundComponent,
-    CartComponent
+    CartComponent,
+    PaypalComponent
   ],
   imports:
   [
