@@ -14,8 +14,8 @@ export class CartComponent implements OnInit {
   sum: number;
 
   constructor(private data: InventoryService) {
-    // this.cart = data.inventory;
-    // this.sum = data.sum;
+    this.cart = data.inventory;
+    this.sum = data.sum;
   }
 
   ngOnInit() { }

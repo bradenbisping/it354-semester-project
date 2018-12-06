@@ -38,7 +38,10 @@ const appRoutes: Routes = [
   },
   { path: 'merch/:id',
     component: MerchDetailComponent,
-    data: { title: 'Item #{{ id }}' }
+    data: {
+      title: 'Item #{{ id }}',
+      id: '{{ id }}'
+    }
   },
   { path: '',
     redirectTo: '/home',

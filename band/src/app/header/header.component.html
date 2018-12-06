@@ -6,34 +6,34 @@
   </button>
 
   <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">
-                    Home
-                    <!-- <span class="sr-only">(current)</span> -->
-                </a>
-          </li>
-          <li class="nav-item">
-                <a class="nav-link" routerLink="/news" routerLinkActive="active">
-                    News
-                    <!-- <span class="sr-only">(current)</span> -->
-                </a>
-          </li>
-          <li class="nav-item" >
-                <a class="nav-link" routerLink="/music" routerLinkActive="active">
-                    Music We Enjoy
-                    <!-- <span class="sr-only">(current)</span> -->
-                </a>
-          </li>
-          <li class="nav-item">
-                <a class="nav-link" routerLink="/merch" routerLinkActive="active">
-                    Merch
-                    <!-- <span class="sr-only">(current)</span> -->
-                </a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">
+                Home
+                <!-- <span class="sr-only">(current)</span> -->
+            </a>
         </li>
-      </ul>
-      <!-- <a *ngIf=empty class="nav-link mr-sm-2" routerLink="/cart" routerLinkActive="{{empty}}">YOUR CART</a> -->
-          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" style="color:white; border-color:white" type="submit">Search</button> -->
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/news" routerLinkActive="active">
+                News
+                <!-- <span class="sr-only">(current)</span> -->
+            </a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" routerLink="/music" routerLinkActive="active">
+                Music We Enjoy
+                <!-- <span class="sr-only">(current)</span> -->
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/merch" routerLinkActive="active">
+                Merch
+                <!-- <span class="sr-only">(current)</span> -->
+            </a>
+        </li>
+    </ul>
+        <a *ngIf=!this.empty class="nav-item nav-link mr-sm-2" routerLink="/cart" routerLinkActive="active">
+            Cart
+        </a>
   </div>
 </nav>

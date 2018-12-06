@@ -18,15 +18,13 @@ p
 
 #outer
 {
-	background-image: 
-	// url('../../assets/images/potentialBG.png');
-	url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HKO9ymTsej0hwltd9/videoblocks-green-abstract-animated-artistic-background-with-moving-chaotic-gradient-structures-on-a-dark-background-computer-rendering_rngrmt75im_thumbnail-full01.png');
+	color: #00ff00;
 }
 
 .container
 {
 	width: 560px;
-	background-color: #fff;
+	background-color: rgb(0, 0, 0);
 	margin: 0 auto;
 }
 
@@ -35,18 +33,18 @@ p
 	position: fixed;
 	text-align: center;
 	width: 530px;
-	top: 55px;
+	top: 75px;
 }
 
-header
-{
-	background-color: #ffffff;
-	position: relative;
-	// text-align: center;
-	width: 530px;
-	height: 40px;
-	top: 0px;
-}
+// header
+// {
+// 	background-color: #ffffff;
+// 	position: relative;
+// 	// text-align: center;
+// 	width: 530px;
+// 	height: 40px;
+// 	top: 0px;
+// }
 
 section
 {
@@ -79,7 +77,7 @@ article
 
 article:hover
 {
-	border: 2px solid #ff9999;
+	border: 2px solid #00ff00;
 }
 
 #details
