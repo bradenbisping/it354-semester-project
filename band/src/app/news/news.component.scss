@@ -1,0 +1,26 @@
+h5{
+    font-weight: bold;
+    color: white;
+}
+p{
+    color:white;
+    font-size: 14pt;
+}
+.container-fluid{
+    top:56px;
+    position: relative;
+    height:100%;
+    background-color: dark;
+    padding-bottom: 26px;
+}
+figure {
+    width: intrinsic;
+}
+img {
+    width: 20%;
+    vertical-align: center;
+}
+.row{
+    width:100%;
+    padding-left: 40px;
+}
