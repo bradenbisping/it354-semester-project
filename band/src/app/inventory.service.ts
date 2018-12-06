@@ -155,19 +155,19 @@ export class InventoryService {
     }
   }
 
-  // isCartEmpty()
-  // {
-  //   for (const item of this.inventory)
-  //   {
-  //     if (item.quantity !== 0)
-  //     {
-  //       this.empty = false;
-  //       break;
-  //     }
-  //     else
-  //     {
-  //       this.empty = true;
-  //     }
-  //   }
-  // }
+  isCartEmpty()
+  {
+    for (const item of this.inventory)
+    {
+      if (item.quantity !== 0)
+      {
+        this.empty = false;
+        break;
+      }
+      else
+      {
+        this.empty = true;
+      }
+    }
+  }
 }

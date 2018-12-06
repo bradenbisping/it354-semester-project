@@ -1,0 +1,35 @@
+img {
+    width: 200px;
+    padding: 25px;
+}
+
+.card {
+    position: relative;
+    top: 75px;
+    margin: 10px;
+    text-align: center;
+    width: 225px;
+    left: 50px;
+    background-color: black;
+}
+
+.row {
+    position: relative;
+    top: 15px;
+    padding-bottom: 100px;
+}
+
+.card-body {
+    color: #00ff00;
+    text-shadow: 
+        -.295px -.295px 0 #ffffff,
+        .295px -.295px 0 rgb(255, 255, 255),
+        -.295px .295px 0 hsl(0, 0%, 100%),
+        .295px .295px 0 rgb(255, 255, 255),
+}
+
+.container-fluid {
+    height: 100%;
+    position: relative;
+    padding-bottom: 102px;
+}

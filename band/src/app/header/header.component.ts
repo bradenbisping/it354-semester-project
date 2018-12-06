@@ -9,23 +9,25 @@ import { InventoryService } from '../inventory.service';
 export class HeaderComponent implements OnInit
 {
   count: number;
-  empty: string;
+  empty: boolean;
 
   constructor(private data: InventoryService)
   {
-    // data.isCartEmpty();
-    // if (data.empty)
-    // {
-    //   this.empty = 'disabled';
-    // }
-    // else
-    // {
-    //   this.empty = 'active';
-    // }
+
   }
 
   ngOnInit()
-  { }
+  {
+    this.data.isCartEmpty();
+    if (this.data.empty)
+    {
+      this.empty = true;
+    }
+    else
+    {
+      this.empty = false;
+    }
+  }
 
   increment()
   {
