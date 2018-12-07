@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div *ngFor="let item of merch" class="card border border-dark mb-3">
-      <a [routerLink]="['/merch', item.id]"><img class="card-img-top" src="../../assets/images/{{item.id}}.png" alt="{{item.name}}"></a>
+      <a [routerLink]="['/merch', item.id]"><img class="card-img-top" src="../../project/assets/images/{{item.id}}.png" alt="{{item.name}}"></a>
       <div class="card-body">
         <h5 class="card-title">{{item.name}}</h5>
         <p class="card-text"><i>${{item.price}}</i></p>
